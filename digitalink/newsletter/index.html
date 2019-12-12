@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>Newsletter Digitalink</title>
+        <meta charset="utf-8">
+        <link href="styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header id="logo"><!--logo-->
+            <div>
+                <a href="http://digitalink.blog/" target="_blank"><img src="images/logo-digitalink-def.png" alt="logo du blog digitalink"/></a>
+            </div>
+        </header>
+        <main>
+            <h1>Les news du mois de décembre</h1><!--titre principal-->
+            <h2 id="blue">Article à la une</h2><!--sous-titre1-->
+            <div class="row">
+                <div class="photo-main-article">
+                    <img src="images/article-linkedin.jpg" alt="un homme entouré des logos des réseaux sociaux"/>
+                <div id="une">
+                    <article>
+                        <h3>Bien gérer sa présence sur LinkedIn : les 5 piliers</h3>
+                        <p>Vous vous demandez encore comment améliorer votre profil LinkedIn ? C'est que vous n'avez pas encore lu notre article !</p>
+                        <div class="button"><a href="http://digitalink.blog/bien-gerer-sa-presence-sur-linkedin-les-5-piliers/" target="_blank">Je lis</a></div>
+                    </article>
+                </div>
+                </div>
+            </div>
+            <h2>A ne pas manquer ce mois-ci</h2><!--sous-titre2-->
+            <section id="section-events"><!--events-->
+                <div class="row" id="row1">
+                    <div class="photo" id="event-1">
+                        <img src="images/conf.png" alt="plusieurs personnes prenant des notes en conférence"/>
+                    </div>
+                    <div class="article-content" id="text-1">
+                        <article>
+                            <h3>La digitale Tech Conférence</h3>
+                            <p class="details">Vos interrogations sur le développement de l'Intelligence Artificielle vous empêchent de trouver le sommeil ? Apprenez en plus sur le sujet en assistant à la Digitale Tech Conférence.</p>
+                            <div class="dropdown">
+                                <a data-dropdown href="#"><img src="images/chevron-down.svg"/ alt="chevron vers le bas"></a>
+                            </div>
+                            <p>A Rennes <br/>Le 06/12/19</p>
+                            <div class="button"><a href="">Plus d'info</a></div>
+                        </article>
+                    </div>
+                </div>
+                <div class="row" id="row2">
+                    <div class="photo" id="event-2">
+                        <img src="images/paris.png" alt="la tour Eiffel"/>
+                    </div>
+                    <div class="article-content" id="text-2">
+                        <article>
+                            <h3>Paris Open Source Summit</h3>
+                            <p class="details">Vous vous questionnez sur la place de l'Open Source dans le monde d'aujourd'hui ? Venez assister au Paris Open Source Summit.</p>
+                            <div class="dropdown">
+                                <a href="#"><img src="images/chevron-down.svg"/ alt="chevron vers le bas"></a>
+                            </div>
+                            <p>A Aubervilliers <br/>Les 10&11/12/19</p>
+                            <div class="button"><a href="">Plus d'info</a></div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer><!--mentions-->
+            <div class="contacts">
+                <div class="mail">
+                    <ul>
+                        <li><a href="https://www.cesi.fr/" target="_blank"><img src="images/logo-cesi.png" alt="logo du Cesi"/></a></li>
+                        <li><p>contact@digitalink.fr</p></li>
+                    </ul>
+                </div>
+                <div class="social-network">
+                    <ul>
+                        <li><a href="#"><img src="images/icon-instagram.png" alt="logo instagram bleu"/></a></li>
+                        <li><a href="#"><img src="images/icon-linkedin.png" alt="logo LinkedIn bleu"/></a></li>
+                        <li><a href="#"><img src="images/icon-twitter.png" alt="logo twitter bleu"/></a></li>
+                        <li><a href="#"><img src="images/icon-facebook.png" alt="logo facebook bleu"/></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="unsub">
+                <p>Pour ne plus recevoir de mails de notre part, cliquez sur <a href="#">ce lien</a>.</p>
+            </div>
+        </footer>
+    </body>
+</html>
+
+<script type="text/javascript">
+    $(function() {
+        $(".dropdown a").click(onClickDropdown)
+    })
+    
+    function onClickDropdown(e) {
+        e.preventDefault();
+        console.log(e)
+    var target = e.currentTarget;
+    
+    var div = $(target).parent()
+    var article = $(div).parent()
+    var p = $(article).find(".details")
+        console.log($(p))
+    if( $(p).hasClass("deploy")){
+        $(p).removeClass("deploy");
+
+        var img = $(target).find("img")
+        img.attr("src", "images/chevron-down.svg")
+    } else {
+        $(p).addClass("deploy");
+
+        var img = $(target).find("img")
+        img.attr("src", "images/chevron-up.svg")
+    }
+    }
+</script>
