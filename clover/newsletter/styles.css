@@ -1,0 +1,194 @@
+/* GENERAL */
+
+* {
+    font-family: open sans, arial, sans-serif;
+    margin: 0;
+}
+
+body {
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+/* HEADER */
+
+#logo {
+    text-align: center;
+    background-color: #fff;
+}
+
+#logo-clover {
+    max-width: 600px;
+}
+
+/* TITRES */
+
+h1, h2 {
+    font-family: open sans, arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    font-size: 150%;
+    background-image: url(images/bow.png);
+    background-repeat: no-repeat;
+    padding: 0.7em;
+}
+
+#background-bow {
+    padding: 2em;
+}
+
+h2 {
+    color: #000;
+    font-size: 130%;
+    padding: 1em;
+}
+
+/* CONTENU */
+
+main, header, footer{
+    width: 600px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.btn {
+    border-radius: 22px;
+    text-align: center;
+    padding: 0.3em;
+    width: 8em;
+    margin: auto;
+    box-shadow: 3px 3px 3px #888;
+}
+
+/* SECTION TABLEAU */
+
+/* général */
+
+.table {
+    display: flex;
+}
+
+.row {
+    flex-basis: 50%;
+}
+
+.row p {
+    padding: 2.3em 1.5em;
+}
+
+.photo-patron {
+    height: 280px;
+}
+
+.photo-patron img {
+    height: 280px;
+    width: 100%;
+}
+
+.test, .news {
+    height: 280px;
+}
+
+/* rang 1 */
+
+
+.test {
+    background: #F8F8F8;
+}
+
+.test .btn {
+    background: #EAC4DD;
+}
+
+.test .btn a {
+    color: #FFF;
+}
+
+/* rang 2 */
+
+.news {
+    background: #E2F9DA;
+}
+
+.news .btn, .more .btn {
+    background: #fff;
+}
+
+.news .btn a {
+    color: #EAC4DD;
+}
+
+.photo-news {
+    text-align: center;
+}
+
+.news p {
+    padding : 0 1.5em 0.5em 1.5em;
+}
+
+/* SECTION READ MORE */
+
+.more {
+    background: rgba(234, 196, 221, 0.65);
+    text-align: center;
+    padding: 2em;
+}
+
+.more h3 {
+    padding-bottom: 1.8em;
+    color: #fff;
+}
+
+.more .btn a {
+    color: #000;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    background: #F8F8F8;
+}
+
+.contact ul {
+    display: flex;
+    padding: 1em;
+}
+
+.contact ul li {
+    flex-basis: 33%;
+    vertical-align: baseline;
+}
+
+.social-network {
+    width: 20%;
+}
+
+.contact p {
+    font-size: 0.8em;
+}
+
+.contact a {
+    color: #EAC4DD;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media only screen and (max-width: 599px) {
+    main, header, footer, #logo-clover {width: 100%;}
+    .table {flex-direction : column;}
+    .row {flex-basis: 100%;}
+    #row1 {display: flex; flex-direction: column-reverse;}
+    .photo-patron img {width: 100%;}
+    .news .btn {margin-top: 1em;}
+}
+    
