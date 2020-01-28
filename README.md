@@ -1,2 +1,3 @@
-# projets-cours
-Projets réalisés en cours de conception web
+# projets-cours/perso
+Une partie des projets a été réalisée en cours de conception web et dans le cadre d'une recherche d'alternance.
+Le dossier "clover" comporte des projets web personnels.
