@@ -1,0 +1,154 @@
+/* GENERAL */
+
+* {
+    font-family: molengo, arial, sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3, .title-creations {
+    font-family: Gabriola, Palatino Linotype, sans-serif; /* aller en cherche une autre pour être sûre*/
+}
+
+a {
+    text-decoration: none;
+    color: #C0E18A;
+}
+
+a:hover {
+    color: #F2C2B8;
+}
+
+li {
+    list-style: none;
+}
+
+.btn {
+    padding: 0.5em;
+    border-radius: 15px;
+}
+
+/* HEADER */
+
+header {
+    max-width: 1200px;
+    margin: auto;
+}
+
+ul {
+    text-align: center;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: 15%;
+    margin: auto;
+}
+
+ul li a {
+    font-size: 1.3em;
+    color: #000;
+}
+
+ul li a:active {
+    color: #C0E18A;
+}
+
+/* ABOUT */
+
+#about {
+    display: flex;
+    position: relative;
+    margin: auto;
+}
+
+h1 {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    font-size: 3em;
+    color: #D76475;
+    top: 40%
+}
+
+/* image de présentation */
+
+.presentation {
+    flex-basis: 50%;
+}
+
+.presentation #main-img {
+    max-width: 100%;
+    height: 100%; /* déforme l'image si on réduit la page ! */
+}
+
+h2 {
+    position: absolute;
+    color: #ffffff;
+    padding: 1em 0 0 2em;
+    font-size: 2em;
+}
+
+/* textes de présentation */
+
+#background-intro {
+    background-color: #F4F1E0;
+}
+
+.introduction {
+    padding: 2em;
+    background-color: #ffffff;
+    margin: auto;
+    width: 30%;
+    position: relative;
+}
+
+.presentation #intro-rounded-img {
+    margin-left: 150px;
+    z-index: 1;
+    position: relative;
+}
+
+#text-1 {
+    margin-top: 10em;
+    margin-bottom: -2em;
+    z-index: 0;
+}
+
+#text-2 {
+    margin-top: -2em;
+    z-index: 2;
+}
+
+/* WORK */
+
+#work {
+    max-width: 1200px;
+    margin: 7em auto;
+}
+
+.row {
+    display:flex;
+    flex-direction: row;
+}
+
+.link-image {
+    position: relative;
+    padding: 1.2em;
+}
+
+.link-image:hover {
+    opacity: 0.20;
+    color: #C0E18A;
+}
+
+.title-creations {
+    position: absolute;
+    font-size: 2em;
+    color: #ffffff;
+    bottom: 0.8em;
+    right: 1em;
+}
